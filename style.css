@@ -1,0 +1,42 @@
+.cabecalho {
+    background-color: rgb(40, 40, 172);
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.cabecalho img {
+    width: 20%;
+    opacity: 40%;
+}
+
+.cabecalho h1 {
+    color: white;
+    font-size: 6em;
+    width: 50%;
+    font-weight: bold;
+}
+
+.rodape {
+    background-color: rgb(40, 40, 172);
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.rodape p {
+    color: rgb(40, 40, 172);
+    width: 100%;
+    padding: 3em;
+}
+
+.conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
