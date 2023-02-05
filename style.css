@@ -36,7 +36,29 @@
     padding: 3em;
 }
 
-.conteudo {
+main {
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
+    justify-content: space-between;
+}
+
+.conteudo {
+    width: 50%;
+}
+
+section div {
+    padding-bottom: 2.3em;
+}
+
+.titulo {
+    font-size: 5em;
+    margin-left: .2em;
+    margin-bottom: .2em;
+}
+
+.contato p {
+    padding: .2em;
+    font-size: 1.2em;
 }
