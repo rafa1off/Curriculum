@@ -1,3 +1,7 @@
+header h1, main {
+    font-family: 'Poppins', sans-serif;
+}
+
 .cabecalho {
     background-color: rgb(40, 40, 172);
     display: flex;
@@ -25,18 +29,83 @@
 .rodape {
     background-color: rgb(40, 40, 172);
     width: 90%;
+    height: 80px;
     margin: 0 auto;
     padding: 2em;
     margin-top: 2em;
 }
 
-.rodape p {
-    color: rgb(40, 40, 172);
-    width: 100%;
-    padding: 3em;
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 70em;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
-.conteudo {
-    width: 90%;
-    margin: 0 auto;
+.contato, .experiencia, .perfil, .habilidades, .formacao {
+    margin-bottom: 2.3em;
+    width: 45%;
+}
+
+.titulo {
+    font-size: 5em;
+    margin-left: .2em;
+    margin-bottom: .2em;
+}
+
+.contato span {
+    padding: .2em;
+    font-size: 1.2em;
+    display: block;
+}
+
+.perfil p, .itens-habilidades {
+    font-size: 1.5em;
+}
+
+.itens-habilidades {
+    padding: .4em;
+}
+
+.itens-habilidades:before, .itens-experiencia:before {
+    content: "•";
+    margin-right: .2em;
+}
+
+.cargo {
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: .3em;
+}
+
+.empresa {
+    font-size: 1.5em;
+    padding: .2em;
+}
+
+.itens-experiencia {
+    font-size: 1.4em;
+    padding: .2em;
+}
+
+.experiencia div {
+    width: 100%;
+}
+
+.experiencia ul {
+    margin: 20px 0;
+}
+
+.formacao h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.formacao p {
+    font-size: 1.7em;
+    margin-bottom: 10px ;
 }
