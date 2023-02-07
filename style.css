@@ -55,7 +55,7 @@ header h1:hover {
 }
 
 .titulo {
-    font-size: 5em;
+    font-size: 55px;
     margin-left: .2em;
     margin-bottom: .2em;
 }
@@ -105,7 +105,7 @@ header h1:hover {
 
 .formacao h3 {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: bold;  
     padding: 5px;
 }
 
@@ -123,6 +123,31 @@ header h1:hover {
     transform: scale(1.05);
     border-radius: 30px;
     background: #e9e8e8;
-    box-shadow:  14px 14px 28px #bebebe, -14px -14px 28px #ffffff;
+    box-shadow:  14px 14px 25px #777777, -5px -5px 25px #ffffff;
     cursor: default;
+}
+
+@media screen and (max-width: 480px) {
+    .conteudo {
+        height: auto;
+    }
+
+    .perfil, .contato, .habilidades, .formacao, .experiencia {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        text-align: center;
+        padding: 0;
+        margin: 0 0 .2em 0;
+    }
+
+    .perfil {
+        text-align: center;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.2em;
+    }
 }
