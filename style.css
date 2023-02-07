@@ -2,6 +2,10 @@ header h1, main {
     font-family: 'Poppins', sans-serif;
 }
 
+header h1:hover {
+    cursor: default;
+}
+
 .cabecalho {
     background-color: rgb(40, 40, 172);
     display: flex;
@@ -108,4 +112,17 @@ header h1, main {
 .formacao p {
     font-size: 1.7em;
     margin-bottom: 10px ;
+}
+
+.perfil, .contato, .habilidades, .formacao, .experiencia {
+    padding: 20px;
+    transition: .4s;
+}
+
+.perfil:hover, .contato:hover, .habilidades:hover, .formacao:hover, .experiencia:hover {
+    transform: scale(1.05);
+    border-radius: 30px;
+    background: #e9e8e8;
+    box-shadow:  14px 14px 28px #bebebe, -14px -14px 28px #ffffff;
+    cursor: default;
 }
