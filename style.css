@@ -49,9 +49,11 @@ header h1:hover {
     justify-content: space-evenly;
 }
 
-.contato, .experiencia, .perfil, .habilidades, .formacao {
+.conteudos {
     margin-bottom: 2.3em;
     width: 45%;
+    padding: 20px;
+    transition: .4s;
 }
 
 .titulo {
@@ -114,12 +116,7 @@ header h1:hover {
     margin-bottom: 10px ;
 }
 
-.perfil, .contato, .habilidades, .formacao, .experiencia {
-    padding: 20px;
-    transition: .4s;
-}
-
-.perfil:hover, .contato:hover, .habilidades:hover, .formacao:hover, .experiencia:hover {
+.conteudos:hover {
     transform: scale(1.05);
     border-radius: 30px;
     background: #e9e8e8;
@@ -127,12 +124,12 @@ header h1:hover {
     cursor: default;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
     .conteudo {
         height: auto;
     }
 
-    .perfil, .contato, .habilidades, .formacao, .experiencia {
+    .conteudos {
         width: 85%;
         margin: 0 auto;
     }
@@ -149,5 +146,9 @@ header h1:hover {
 
     .cabecalho h1 {
         font-size: 2.2em;
+    }
+
+    .cabecalho, .rodape {
+        width: auto;
     }
 }
