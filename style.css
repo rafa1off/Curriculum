@@ -39,7 +39,7 @@ header h1:hover {
     margin-top: 2em;
 }
 
-.conteudo {
+.conteudo .swiper-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -125,7 +125,7 @@ header h1:hover {
 }
 
 @media screen and (max-width: 900px) {
-    .conteudo {
+    .conteudo .swiper-wrapper {
         height: auto;
     }
 
