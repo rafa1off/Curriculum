@@ -39,19 +39,16 @@ header h1:hover {
     margin-top: 2em;
 }
 
-.conteudo .swiper-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.conteudo {
     width: 90%;
-    height: 70em;
+    /* height: 40em; */
     margin: 0 auto;
-    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
 }
 
 .conteudos {
     margin-bottom: 2.3em;
-    width: 45%;
     padding: 20px;
     transition: .4s;
 }
