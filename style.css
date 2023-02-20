@@ -53,7 +53,7 @@ header h1:hover {
     margin-bottom: 2.3em;
     width: 45%;
     padding: 20px;
-    transition: .4s;
+    /*transition: .4s;*/
 }
 
 .titulo {
@@ -116,7 +116,8 @@ header h1:hover {
     margin-bottom: 10px ;
 }
 
-.conteudos:hover {
+.conteudos-hover {
+    transition: .4s;
     transform: scale(1.05);
     border-radius: 30px;
     background: #e9e8e8;
