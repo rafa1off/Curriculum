@@ -12,12 +12,6 @@ for (i = 0; i < conteudos.length; i++) {
     cont.onmouseout = ()=> {
         retornaBox(cont2)
     }
-}
-
-for (i = 0; i < conteudos.length; i++) {
-    const cont = conteudos[i];
-    const cont1 = cont.classList[1];
-    const cont2 = `.${cont1}`;
 
     cont.ontouchstart = ()=> {
         expandBox(cont2);
