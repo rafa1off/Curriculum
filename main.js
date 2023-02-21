@@ -1,22 +1,23 @@
 const conteudos = document.querySelectorAll('.conteudos');
 
 for (i = 0; i < conteudos.length; i++) {
-    const cont = `.${conteudos[i].classList[1]}`;
+    const paineis = conteudos[i];
+    const cont = `.${paineis.classList[1]}`;
 
-    conteudos[i].onmouseover = ()=> {
-        expandBox(cont);        
-    }
-
-    conteudos[i].onmouseout = ()=> {
-        retornaBox(cont)
-    }
-
-    conteudos[i].ontouchstart = ()=> {
+    paineis.onmouseover = ()=> {
         expandBox(cont);
+
+        paineis.onmouseout = ()=> {
+            retornaBox(cont)
+        }
     }
 
-    conteudos[i].ontouchend = ()=> {
-        retornaBox(cont);
+    paineis.ontouchstart = ()=> {
+        expandBox(cont);
+
+        paineis.ontouchend = ()=> {
+            retornaBox(cont);
+        }
     }
 }
 
