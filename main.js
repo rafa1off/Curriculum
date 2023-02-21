@@ -1,24 +1,22 @@
 const conteudos = document.querySelectorAll('.conteudos');
 
 for (i = 0; i < conteudos.length; i++) {
-    const cont = conteudos[i];
-    const cont1 = cont.classList[1];
-    const cont2 = `.${cont1}`;
+    const cont = `.${conteudos[i].classList[1]}`;
 
-    cont.onmouseover = ()=> {
-        expandBox(cont2);
-
-        cont.onmouseout = ()=> {
-            retornaBox(cont2)
-        }
+    conteudos[i].onmouseover = ()=> {
+        expandBox(cont);        
     }
 
-    cont.ontouchstart = ()=> {
-        expandBox(cont2);
-        
-        setTimeout(() => {
-            retornaBox(cont2)
-        }, 600)
+    conteudos[i].onmouseout = ()=> {
+        retornaBox(cont)
+    }
+
+    conteudos[i].ontouchstart = ()=> {
+        expandBox(cont);
+    }
+
+    conteudos[i].ontouchend = ()=> {
+        retornaBox(cont);
     }
 }
 
