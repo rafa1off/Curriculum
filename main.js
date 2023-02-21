@@ -5,23 +5,21 @@ for (i = 0; i < conteudos.length; i++) {
     const cont1 = cont.classList[1];
     const cont2 = `.${cont1}`;
 
-    cont.onmouseover = function () {
+    cont.onmouseover = ()=> {
         expandBox(cont2);        
     }
 
-    cont.onmouseout = function () {
+    cont.onmouseout = ()=> {
         retornaBox(cont2)
     }
 }
 
 function expandBox(divConteudo) {
     const container = document.querySelector(divConteudo)
-    console.log(container)
     container.classList.add('conteudos-hover')    
 }
 
 function retornaBox(divConteudo) {
     const container = document.querySelector(divConteudo)
-    console.log(container)
     container.classList.remove('conteudos-hover')
 }
