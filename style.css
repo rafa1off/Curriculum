@@ -116,7 +116,7 @@ header h1:hover {
     margin-bottom: 10px ;
 }
 
-.conteudos:hover {
+.conteudos-hover {
     transform: scale(1.05);
     border-radius: 30px;
     background: #e9e8e8;
